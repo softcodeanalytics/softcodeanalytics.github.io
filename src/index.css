@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  font-family: "Lexend Deca", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424; */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global */
+*,
+*::after,
+*::before {
+  @apply m-0 p-0 box-border scroll-smooth;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+a {
+  @apply hover:font-semibold;
+  text-decoration: inherit;
+  /* color: #d4ae8b;  */
+}
+
+body {
+  @apply bg-gray-light text-sm md:text-base text-black;
+}
+
+h1 {
+  @apply text-[40px] leading-[42px] md:text-[60px] md:leading-[62px];
+}
+
+h2 {
+  @apply text-[25px] leading-[28px] md:text-[35px] md:leading-[38px];
+}
+
+h3 {
+  @apply text-[25px] leading-[32px] md:text-[30px];
+}
+
+h4 {
+  @apply text-[17px] leading-[20px] md:text-[18px];
+}
+
+p {
+  @apply leading-[25px];
+}
+
+img {
+  @apply w-full h-auto object-cover align-middle;
+}
+
+li {
+  @apply list-none cursor-pointer relative;
+}
+
+.container {
+  @apply w-full h-full px-[20px] sm:px-[30px] max-w-[1312px] 2xl:max-w-[1712px] m-auto flex flex-row justify-between items-center;
+}

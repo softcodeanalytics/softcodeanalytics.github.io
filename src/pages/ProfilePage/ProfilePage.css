@@ -1,0 +1,165 @@
+.header-section,
+.market-size-section {
+  @apply relative -mt-[95px] bg-[url("../../assets/Home-Page-Assets/hero-bkg-2.jpg")] bg-no-repeat bg-cover bg-center;
+}
+
+.header-section::before,
+.market-size-section::before {
+  @apply content-[""] absolute top-0 left-0 w-full h-full bg-gray-darkest opacity-45 z-[1];
+}
+
+.header-section .container {
+  @apply relative z-[3] flex-col w-full lg:w-[70%] pt-40 pb-10 lg:pb-14;
+}
+
+.header {
+  @apply flex flex-col text-white-offWhite text-center gap-5;
+}
+
+/* Recent Projects Section Styling */
+.recent-projects-section .container,
+.market-size-section .container,
+.team-section .container {
+  @apply flex-col w-full lg:w-[90%] py-[60px] gap-10;
+}
+
+.rp-header,
+.market-header {
+  @apply flex flex-col lg:flex-row w-full xl:w-[90%] gap-y-3 justify-between;
+}
+
+.rp-heads,
+.market-heads {
+  @apply flex flex-col w-full lg:w-[40%] gap-2;
+}
+
+.rp-heads h5,
+.market-heads h5 {
+  @apply uppercase text-gold;
+}
+
+.rp-header p,
+.market-header p {
+  @apply w-full lg:w-[40%];
+}
+
+.rp-boxes,
+.rp-box,
+.rp-content,
+.rp-text {
+  @apply flex flex-col gap-16 w-full xl:w-[80%];
+}
+
+.rp-box {
+  @apply gap-10 w-full p-5 bg-white-offWhite rounded-lg shadow-lg transition-all duration-300 ease-in-out;
+}
+
+.rp-logo {
+  @apply w-[45%] md:w-[20%] xl:w-[15%];
+}
+
+.rp-content {
+  @apply gap-3 flex-row w-full;
+}
+
+.rp-text {
+  @apply gap-4 w-full md:w-[80%];
+}
+
+.rp-text h4 {
+  @apply text-green-light;
+}
+
+.rp-content img {
+  @apply hidden md:block w-[20%] rounded-lg transition-all duration-500 ease-in-out;
+}
+
+/* .hover-effect:hover .rp-content img {
+  @apply opacity-100;
+} */
+
+.rp-box:hover {
+  @apply bg-white-offWhite shadow-[#d4ae8b2b];
+}
+/* Recent Projects Section Styling ends */
+
+/* Market-Size Section Styling */
+.market-size-section {
+  @apply -mt-0 bg-[url("../../assets/Profile-Page-Assets/world-map.png")];
+}
+
+.market-size-section::before {
+  @apply bg-gray-darkest opacity-85;
+}
+
+.market-size-section .container {
+  @apply py-40 relative z-[3] text-white-offWhite;
+}
+
+.market-box h4,
+.market-heads h5 {
+  @apply text-green-lighter;
+}
+
+.market-boxes,
+.team-images {
+  @apply w-full xl:w-[90%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8;
+  perspective: 1000px;
+}
+
+.market-box {
+  @apply flex flex-col p-6 gap-3 bg-[hsla(120,9%,2%,0.5)] rounded-lg shadow relative transition-all duration-300 ease-in-out;
+}
+
+.market-box:hover {
+  @apply transform scale-105 shadow-[#0e948419] shadow-lg;
+}
+
+.market-box h4 {
+  @apply text-lg font-semibold;
+}
+/* Market-Size Section Styling ends */
+
+/* Team Section Styling */
+.team-section .container {
+  @apply py-[unset] pt-[60px];
+}
+
+.team-header {
+  @apply w-full xl:w-[90%] flex flex-col gap-2;
+}
+
+.team-header h5,
+.team-text h5 {
+  @apply uppercase text-green-light;
+}
+
+.team-images {
+  @apply w-[90%] lg:grid-cols-3 2xl:grid-cols-5;
+}
+
+.team-image-box {
+  @apply bg-white-offWhite rounded-xl shadow;
+}
+
+.team-image-box img {
+  @apply w-[354px] h-[354px] object-top rounded-ss-xl rounded-se-xl;
+}
+
+.team-image-box,
+.team-text {
+  @apply flex flex-col gap-3;
+}
+
+.team-text {
+  @apply p-3 gap-2;
+}
+
+.team-text h5 {
+  @apply text-xs;
+}
+
+.team-text h4 {
+  @apply text-xl font-semibold;
+}
+/* Team Section Styling ends */

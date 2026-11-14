@@ -1,0 +1,141 @@
+.footer-section {
+  @apply border-t-2 text-white p-0 mt-20 w-full bg-[url("../../assets/Home-Page-Assets/hero-bkg.jpg")] bg-no-repeat bg-cover bg-center;
+}
+
+.footer-content {
+  @apply py-10;
+}
+
+.f-copyright,
+.footer-content .container {
+  @apply flex-col md:flex-row;
+}
+
+.footer-content .container {
+  @apply items-start gap-[70px] md:gap-0;
+}
+
+.footer-left,
+.footer-right {
+  @apply flex w-full md:w-1/2;
+}
+
+.footer-left {
+  @apply flex-col justify-center md:justify-start;
+}
+
+.footer-left img {
+  @apply w-[40%] lg:w-[30%] mb-8;
+}
+
+.footer-left ul {
+  @apply flex flex-col gap-5;
+}
+
+.footer-left li {
+  @apply pb-1 flex items-center;
+}
+
+.footer-left p,
+.footer-left a {
+  @apply hover:text-green-light;
+}
+
+.footer-icon {
+  @apply text-xl flex pr-5 text-gold-light;
+}
+
+.f-copyright {
+  @apply w-full flex justify-between py-8;
+}
+
+.f-copyright p {
+  @apply text-[12px] md:text-sm text-center;
+}
+
+.f-copyright a {
+  @apply text-gold-light hover:text-green-light;
+}
+
+.footer-right {
+  @apply flex-col self-center gap-7;
+}
+
+.social-icons {
+  @apply flex w-full text-xl sm:text-2xl gap-6 justify-between md:justify-normal;
+}
+
+.social-icon {
+  @apply block cursor-pointer p-2 bg-gold rounded-lg hover:scale-125;
+}
+
+.reach-out,
+.reach-out-box {
+  @apply flex flex-col gap-2 w-full;
+}
+
+.reach-out h5 {
+  @apply text-xl font-semibold;
+}
+
+.reach-out-box {
+  @apply flex-row;
+}
+
+.reach-out input {
+  @apply w-[80%] bg-[hsla(200,100%,98%,0.30)] outline-none rounded-lg p-[10px];
+}
+
+.reach-out input:focus {
+  @apply outline-2 outline outline-green-light;
+}
+
+/* .prefooter-section {
+  @apply mt-20 -mb-28;
+}
+
+.prefooter-section .container {
+  @apply justify-center;
+}
+
+.prefooter {
+  @apply relative overflow-hidden h-52 lg:h-60 w-full lg:w-[90%] flex justify-center items-center bg-gold-light rounded-[40px] shadow-lg;
+}
+
+.pref-circle-left,
+.pref-circle-right {
+  @apply absolute flex justify-center transition-all duration-700 ease-in-out;
+}
+
+.pref-circle-left {
+  @apply bottom-[-40%] left-[-35%] md:left-[-15%] lg:left-[-12%] xl:bottom-[-50%] xl:left-[-7%];
+}
+
+.pref-circle-right {
+  @apply top-[-50%] right-[-60%] md:top-[-40%] md:right-[-20%] xl:top-[-50%] xl:right-[-10%];
+}
+
+.pref-hover-container:hover .pref-circle-left {
+  @apply translate-x-[25%] md:translate-x-[40%] lg:translate-x-[50%] translate-y-[-110%] md:translate-y-[-100%] xl:translate-y-[-70%];
+}
+
+.pref-hover-container:hover .pref-circle-right {
+  @apply translate-x-[-20%] md:translate-x-[-30%] lg:translate-x-[-50%] translate-y-[90%] md:translate-y-[80%] lg:translate-y-[70%];
+}
+
+.pref-circle-left img,
+.pref-circle-right img {
+  @apply w-1/2 lg:w-[60%] xl:w-[70%];
+}
+
+.pref-text {
+  @apply w-full flex justify-center z-30;
+}
+
+.pref-text h1 {
+  @apply w-[90%] text-center text-[48px] leading-[52px] md:text-[58px] md:leading-[92px] lg:text-[78px] xl:text-[98px] lg:leading-[102px];
+}
+
+.pref-text span {
+  @apply text-gold font-bold;
+} */

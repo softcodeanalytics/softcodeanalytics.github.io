@@ -1,0 +1,246 @@
+.hero-section {
+  @apply -mt-[95px] bg-[url("../../assets/Home-Page-Assets/hero-bkg-2.jpg")] bg-no-repeat bg-cover bg-center;
+}
+
+.hero-section .container {
+  @apply pt-40 pb-52 lg:pb-72 gap-12 lg:gap-5 flex-col lg:flex-row;
+}
+
+.hero-left,
+.hero-right {
+  @apply w-full flex flex-col gap-5 text-white;
+}
+
+.hero-left {
+  @apply lg:w-[45%];
+}
+
+.hero-left span {
+  @apply text-white;
+}
+
+.hero-left h1 {
+  @apply text-gold-lighter;
+}
+
+.hero-right {
+  @apply relative lg:w-[55%];
+  perspective: 1000px;
+}
+
+.main-img {
+  @apply block w-full h-auto origin-center;
+  transition: transform 0.1s ease-out;
+}
+
+/* Features Section Styling */
+.features-section {
+  @apply -mt-[100px] lg:-mt-[140px] pb-10;
+}
+
+.features-section .container {
+  @apply flex-col w-[90%] bg-white-offWhite rounded-2xl shadow-[#d4ae8b46] shadow-2xl py-[60px] gap-10;
+}
+
+.feature-header,
+.services-header,
+.contact-header {
+  @apply flex flex-col lg:flex-row w-[90%] gap-y-3 justify-between;
+}
+
+.feat-heads,
+.service-heads {
+  @apply flex flex-col w-full lg:w-[40%] gap-2;
+}
+
+.feat-heads h5,
+.about-heads h5,
+.service-heads h5,
+.contact-heads h5 {
+  @apply uppercase text-gold;
+}
+
+.feature-header p,
+.services-header p {
+  @apply w-full lg:w-[40%];
+}
+
+.feature-boxes {
+  @apply w-[95%] xl:w-[90%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8;
+}
+
+.feature-box {
+  @apply flex flex-col items-center text-center p-6 bg-white-offWhite rounded-lg shadow relative transition-all duration-300 ease-in-out;
+}
+
+.feature-box:hover {
+  @apply transform scale-105 shadow-[#d4ae8b46] shadow-lg;
+}
+
+.feature-box img {
+  @apply w-[15%] mb-4;
+}
+
+.feature-box h4,
+.services-box h4 {
+  @apply text-lg font-semibold text-gold;
+}
+/* Features Section Styling ends */
+
+/* About Section Styling */
+.about-section {
+  @apply py-[130px];
+}
+
+.about-section .container,
+.contact-section .container {
+  @apply flex-col gap-10;
+}
+
+.about-header,
+.about-heads {
+  @apply flex flex-col gap-5 items-center text-center w-full lg:w-[90%];
+}
+
+.about-heads {
+  @apply gap-1;
+}
+
+.about-heads h5 {
+  @apply text-green-light;
+}
+
+.about-content {
+  @apply flex flex-col-reverse md:flex-row w-full lg:w-[90%] bg-white-offWhite rounded-2xl shadow-[#0e94842b] shadow-2xl;
+}
+
+.about-mvg {
+  @apply flex w-full md:w-[80%] lg:w-[70%] flex-col justify-center p-5 lg:p-8 2xl:p-12 gap-5;
+}
+
+.about-img {
+  @apply w-full md:w-[20%] lg:w-[30%] h-20 md:h-[unset] rounded-ee-2xl md:rounded-ee-none md:rounded-ss-2xl rounded-es-2xl;
+}
+
+.mvg-box {
+  @apply flex flex-col-reverse md:flex-row w-full bg-white-offWhite gap-[5px] rounded-xl shadow transition-all duration-300 ease-in-out;
+}
+
+.mvg {
+  @apply flex flex-col w-full md:w-[75%] lg:w-[85%]  gap-3 p-4 lg:p-5;
+}
+
+.mvg h4 {
+  @apply font-semibold text-green-light;
+}
+
+.mvg-box img {
+  @apply w-full md:w-[25%] lg:w-[15%] rounded-se-xl rounded-ss-xl md:rounded-ss-none md:rounded-ee-xl transition-all duration-500 ease-in-out;
+}
+
+.hover-contain img {
+  @apply opacity-100 md:opacity-0;
+}
+
+.hover-contain:hover img {
+  @apply opacity-[unset] md:opacity-100;
+}
+
+.hover-contain:hover {
+  @apply bg-gray-dark text-white-offWhite;
+}
+
+.hover-contain:hover h4 {
+  @apply text-gold-light;
+}
+/* About Section Styling ends */
+
+/* Services Section Styling */
+.services-section,
+.contact-section {
+  @apply pt-[130px];
+}
+
+.services-section {
+  @apply relative bg-[url("../../assets/Home-Page-Assets/hero-bkg-3.jpg")] bg-no-repeat bg-cover bg-center text-white;
+}
+
+/* .services-section {
+  @apply pt-[130px];
+} */
+
+.services-section::before {
+  @apply content-[""] absolute top-0 left-0 w-full h-full bg-gray-darkest opacity-85 z-[1];
+}
+
+.services-section .container {
+  @apply relative z-[2] w-full md:w-[90%] flex-col;
+}
+
+.service-heads h5 {
+  @apply text-green-lighter;
+}
+
+.services-boxes {
+  @apply grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 lg:gap-6 xl:gap-8 pt-10 pb-32 w-full lg:w-[90%];
+}
+
+.services-box {
+  @apply relative flex flex-col bg-white-offWhite gap-2 text-black p-5 rounded-lg shadow-xl overflow-hidden transition-all duration-300 ease-in-out;
+  perspective: 1000px;
+}
+
+.services-box:hover {
+  @apply bg-gray-dark text-white-offWhite;
+}
+
+.services-box:hover h4 {
+  @apply text-green-lighter;
+}
+
+.services-box:hover .service-img {
+  @apply opacity-100;
+}
+
+.service-content {
+  @apply z-[4];
+}
+
+.service-img {
+  @apply opacity-0 absolute z-[3] -left-[4%] -bottom-[10%] lg:-bottom-[15%] w-[30%] 2xl:w-[20%];
+}
+
+.service-img svg {
+  @apply text-[#2fe1cd73] w-full h-full;
+}
+/* Services Section Styling ends */
+
+/* Contact Section Styling */
+.contact-section {
+  @apply pb-0;
+}
+
+.contact-cards {
+  @apply grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5 w-[90%] md:w-[100%] lg:w-[80%] xl:w-[90%];
+}
+
+.contact-card {
+  @apply flex flex-col gap-10 p-5 bg-white-offWhite rounded-lg shadow justify-between;
+}
+
+.contact-icon {
+  @apply w-[13%];
+}
+
+.contact-icon svg {
+  @apply text-gold w-full h-full;
+}
+
+.contact-content {
+  @apply flex flex-col gap-10;
+}
+
+.contact-buttons {
+  @apply flex gap-5 justify-between;
+}
+/* Contact Section Styling ends */

@@ -1,0 +1,15 @@
+.main-button button {
+  @apply bg-green text-white font-semibold hover:font-bold py-3 px-5 rounded-lg hover:bg-gold flex items-center gap-[10px];
+}
+
+.main-button button svg {
+  @apply text-xl text-gold;
+}
+
+.main-button button:hover svg {
+  @apply text-white;
+}
+
+.main-button {
+  @apply text-[14px] md:text-[16px];
+}

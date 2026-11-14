@@ -1,0 +1,7 @@
+.error-page-section {
+  @apply flex flex-col justify-center h-screen;
+}
+
+.error-page-section .container {
+  @apply flex-col gap-10 h-1/2;
+}

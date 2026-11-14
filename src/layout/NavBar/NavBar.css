@@ -1,0 +1,92 @@
+.navbar {
+  @apply sticky w-[95%] top-[15px] left-[2.5%] h-[70px] lg:h-20 rounded-xl bg-[hsla(120,9%,2%,0.5)] border-b-green border-b-[2px] shadow-md backdrop-blur-[8px] flex justify-between items-center z-[999] transition-all duration-200 ease-in-out;
+}
+
+.navbar.scrolled {
+  @apply bg-[hsla(200,100%,98%,0.30)] border-b-gold;
+}
+
+.logo {
+  @apply flex justify-start items-center w-1/2 lg:w-[30%];
+}
+
+.navbar-logo {
+  @apply flex justify-center items-center;
+}
+
+/* .navbar-logo img:first-child {
+  @apply hidden lg:block md:h-16;
+} */
+
+/* .navbar-logo img:last-child,
+.mobile-menu {
+  @apply h-auto w-[42px] block lg:hidden;
+} */
+
+.navbar-logo img,
+.mobile-menu {
+  @apply h-auto w-[42px] lg:w-[52px];
+}
+
+.navbar .mobile-menu {
+  @apply lg:hidden text-white flex text-xl cursor-pointer items-center justify-end w-1/2 mr-[10px];
+}
+
+.menu a {
+  @apply text-white hover:text-green-lighter;
+}
+
+.menu .active a {
+  @apply text-green-lighter font-semibold;
+}
+
+.navbar.scrolled .mobile-menu {
+  @apply text-black;
+}
+
+.navbar.scrolled .menu a {
+  @apply text-black hover:text-gold-lighter;
+}
+
+.navbar.scrolled .menu .active a {
+  @apply text-gold-lighter;
+}
+
+.menu div {
+  @apply flex flex-row justify-between items-center gap-5;
+}
+
+.menu-list {
+  @apply font-semibold mx-[5px];
+}
+
+.menu img {
+  @apply h-[42px];
+}
+
+@media screen and (max-width: 768px) {
+  .menu,
+  .menu-bg-overlay {
+    @apply flex flex-col justify-center items-center absolute top-[70px] left-[50%] transform -translate-x-1/2 translate-y-[0%] bg-green backdrop-blur-[20px] opacity-90 w-[95%] max-w-[420px] md:max-w-[612px] h-[450px] rounded-b-xl transition-all duration-300 ease-in-out;
+  }
+
+  .menu-bg-overlay {
+    @apply fixed z-[1] bg-black opacity-10 w-full h-full top-0;
+  }
+
+  .menu div {
+    @apply absolute z-[2] flex-col transition-all duration-300 ease-in-out;
+  }
+
+  .menu .menu-list {
+    @apply font-semibold my-1 mx-[10px] py-[6px] px-2 border-white border border-solid rounded-[10px];
+  }
+
+  .navbar.scrolled .menu a {
+    @apply text-white hover:text-gold-lighter;
+  }
+
+  .navbar.scrolled .menu .active a {
+    @apply text-gold-lighter;
+  }
+}
